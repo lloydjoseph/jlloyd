@@ -1,3 +1,20 @@
 * {
     font-family: 'Open Sans', sans-serif;
 }
+
+:root {
+    --red: #E65D87;
+    --blue: #0E8EDE;
+    --white: #fff;
+    --grey-1: #B3C0C7;
+    --grey-2: #535C61;
+    --black: #212A2F;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--black);
+}
+
+p {
+    color: var(--grey-2)
+}
