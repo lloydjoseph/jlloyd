@@ -1,0 +1,120 @@
+$red: #E65D87;
+$blue: #0E8EDE;
+$white: #fff;
+$grey-1: #B3C0C7;
+$grey-2: #535C61;
+$black: #15181b;
+$navbar-height: 6rem;
+
+
+* {
+  font-family: 'Space Mono', monospace;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $black
+}
+
+p, span {
+  color: $grey-2
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  height: $navbar-height;
+  background: #fff;
+}
+
+.navbar-logo {
+  height: 2rem;
+}
+
+.logo {
+  height: 100%;
+  width: auto;
+}
+
+.navbar-link,.navbar-link:active {
+  color: $grey-2;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-weight: 100;
+  border-bottom: 2px solid transparent;
+}
+
+.navbar-link:hover, .navbar-link:focus {
+  color: var(--black);
+  font-weight: 900;
+}
+
+.title {
+  margin: 0;
+}
+
+.footer {
+  background: $black;
+}
+
+.contact {
+  color: $white;
+}
+
+.white-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.white-link:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+#navbar-open-btn {
+  display: none;
+  border: 1px solid $grey-2;
+  background: none;
+  padding: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+#navbar-close-btn {
+  display: flex;
+  border: 1px solid $grey-2;
+  background: none;
+  padding: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+#navbar-close:hover {
+  background: #ececec;
+}
+
+#navbar-open {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  background: #fff;
+}
+
+#navbar-open .navbar-link {
+  margin: 0;
+}
+
+@media only screen and (max-width: 991px) {
+  #navbar-links {
+    display: none;
+  }
+
+  #navbar-open-btn {
+    display: flex;
+  }
+}
