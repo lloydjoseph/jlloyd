@@ -1,11 +1,18 @@
+// ----------------------------------------------------------
+// Variables
+// ----------------------------------------------------------
+
 $red: #E65D87;
 $blue: #0E8EDE;
 $white: #fff;
-$grey-1: #B3C0C7;
+$grey-1: #e5e5e5;
 $grey-2: #535C61;
 $black: #15181b;
 $navbar-height: 6rem;
 
+// ----------------------------------------------------------
+// Generic styling
+// ----------------------------------------------------------
 
 * {
   font-family: 'Space Mono', monospace;
@@ -17,19 +24,19 @@ html, body {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: $black
-}
-
 p, span {
   color: $grey-2
 }
+
+// ----------------------------------------------------------
+// Navbar section
+// ----------------------------------------------------------
 
 .navbar {
   position: sticky;
   top: 0;
   height: $navbar-height;
-  background: #fff;
+  background: $white;
 }
 
 .navbar-logo {
@@ -50,51 +57,27 @@ p, span {
 }
 
 .navbar-link:hover, .navbar-link:focus {
-  color: var(--black);
+  color: $black;
   font-weight: 900;
 }
 
-.title {
-  margin: 0;
-}
-
-.footer {
-  background: $black;
-  color: $white;
-}
-
-.contact {
-  color: $white;
-}
-
-.white-link {
-  text-decoration: none;
-  color: #fff;
-}
-
-.white-link:hover {
-  text-decoration: underline;
-  color: #fff;
+.navbar-btn {
+  border: 1px solid $grey-2;
+  background: none;
+  padding: 0.5rem;
+  transition: all 0.2s ease-in-out;
 }
 
 #navbar-open-btn {
   display: none;
-  border: 1px solid $grey-2;
-  background: none;
-  padding: 0.5rem;
-  transition: all 0.2s ease-in-out;
 }
 
 #navbar-close-btn {
   display: flex;
-  border: 1px solid $grey-2;
-  background: none;
-  padding: 0.5rem;
-  transition: all 0.2s ease-in-out;
 }
 
-#navbar-close:hover {
-  background: #ececec;
+#navbar-close:hover, #navbar-close:focus {
+  background: $grey-1;
 }
 
 #navbar-open {
@@ -103,12 +86,16 @@ p, span {
   width: 100vw;
   height: 100vh;
   z-index: 2;
-  background: #fff;
+  background: $white;
 }
 
 #navbar-open .navbar-link {
   margin: 0;
 }
+
+// ----------------------------------------------------------
+// Portfolio section
+// ----------------------------------------------------------
 
 #portfolio-container {
   display: grid;
@@ -118,7 +105,7 @@ p, span {
 }
 
 .portfolio-item {
-  border: 1px solid #d0d0d0;
+  border: 1px solid $grey-1;
 }
 
 .portfolio-item a {
@@ -130,6 +117,10 @@ p, span {
   -webkit-user-drag: none;
 }
 
+// ----------------------------------------------------------
+// Skills section
+// ----------------------------------------------------------
+
 #skills-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -138,33 +129,55 @@ p, span {
 }
 
 .skill {
-  border: 1px solid #d0d0d0;
+  border: 1px solid $grey-1;
 }
 
 .skill img {
   height: 100px;
 }
 
+// ----------------------------------------------------------
+// Footer section
+// ----------------------------------------------------------
+
+.footer {
+  background: $black;
+  color: $white;
+}
+
+// ----------------------------------------------------------
+// Media queries for responsive
+// ----------------------------------------------------------
+
+// When screen is smaller than 991 px (tablets, phones)
 @media only screen and (max-width: 991px) {
+  // Hide the desktop links
   #navbar-links {
     display: none;
   }
 
+  // Show the button to open mobile navbar
   #navbar-open-btn {
     display: flex;
   }
 }
 
+// When screen is smaller than 768px (tablets, phones)
 @media only screen and (max-width: 768px) {
+  // Make portfolio items 1 column wide
   #portfolio-container {
     grid-template-columns: 1fr;
   }
+
+  // Make skills items 3 columns wide
   #skills-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
+// When screen is smaller than 390px (small phones)
 @media only screen and (max-width: 390px) {
+  // Make skills items 2 columns wide
   #skills-container {
     grid-template-columns: 1fr 1fr;
   }

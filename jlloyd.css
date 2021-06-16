@@ -8,10 +8,6 @@ html, body {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #15181b;
-}
-
 p, span {
   color: #535C61;
 }
@@ -41,51 +37,27 @@ p, span {
 }
 
 .navbar-link:hover, .navbar-link:focus {
-  color: var(--black);
+  color: #15181b;
   font-weight: 900;
 }
 
-.title {
-  margin: 0;
-}
-
-.footer {
-  background: #15181b;
-  color: #fff;
-}
-
-.contact {
-  color: #fff;
-}
-
-.white-link {
-  text-decoration: none;
-  color: #fff;
-}
-
-.white-link:hover {
-  text-decoration: underline;
-  color: #fff;
+.navbar-btn {
+  border: 1px solid #535C61;
+  background: none;
+  padding: 0.5rem;
+  transition: all 0.2s ease-in-out;
 }
 
 #navbar-open-btn {
   display: none;
-  border: 1px solid #535C61;
-  background: none;
-  padding: 0.5rem;
-  transition: all 0.2s ease-in-out;
 }
 
 #navbar-close-btn {
   display: flex;
-  border: 1px solid #535C61;
-  background: none;
-  padding: 0.5rem;
-  transition: all 0.2s ease-in-out;
 }
 
-#navbar-close:hover {
-  background: #ececec;
+#navbar-close:hover, #navbar-close:focus {
+  background: #e5e5e5;
 }
 
 #navbar-open {
@@ -109,7 +81,7 @@ p, span {
 }
 
 .portfolio-item {
-  border: 1px solid #d0d0d0;
+  border: 1px solid #e5e5e5;
 }
 
 .portfolio-item a {
@@ -129,11 +101,16 @@ p, span {
 }
 
 .skill {
-  border: 1px solid #d0d0d0;
+  border: 1px solid #e5e5e5;
 }
 
 .skill img {
   height: 100px;
+}
+
+.footer {
+  background: #15181b;
+  color: #fff;
 }
 
 @media only screen and (max-width: 991px) {
