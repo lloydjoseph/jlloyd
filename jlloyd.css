@@ -16,7 +16,7 @@ p, span {
   position: sticky;
   top: 0;
   height: 6rem;
-  background: #fff;
+  background: #FFF;
 }
 
 .navbar-logo {
@@ -37,7 +37,7 @@ p, span {
 }
 
 .navbar-link:hover, .navbar-link:focus {
-  color: #15181b;
+  color: #15181B;
   font-weight: 900;
 }
 
@@ -62,7 +62,7 @@ p, span {
 }
 
 #navbar-close:hover, #navbar-close:focus {
-  background: #e5e5e5;
+  background: #E5E5E5;
 }
 
 #navbar-open {
@@ -71,7 +71,7 @@ p, span {
   width: 100vw;
   height: 100vh;
   z-index: 2;
-  background: #fff;
+  background: #FFF;
 }
 
 #navbar-open .navbar-link {
@@ -86,11 +86,11 @@ p, span {
 }
 
 .portfolio-item {
-  border: 1px solid #e5e5e5;
+  border: 1px solid #E5E5E5;
 }
 
 .portfolio-item a {
-  color: #15181b;
+  color: #15181B;
 }
 
 .portfolio-item img {
@@ -99,7 +99,7 @@ p, span {
 }
 
 .portfolio-item-title {
-  color: #15181b;
+  color: #15181B;
   font-weight: 900;
 }
 
@@ -111,7 +111,7 @@ p, span {
 }
 
 .skill {
-  border: 1px solid #e5e5e5;
+  border: 1px solid #E5E5E5;
 }
 
 .skill img {
@@ -119,12 +119,12 @@ p, span {
 }
 
 .footer {
-  background: #15181b;
-  color: #fff;
+  background: #15181B;
+  color: #FFF;
 }
 
 .text-footer {
-  color: #7a848a;
+  color: #9CA9B0;
 }
 
 @media only screen and (max-width: 991px) {
