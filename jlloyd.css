@@ -45,7 +45,12 @@ p, span {
   border: 1px solid #535C61;
   background: none;
   padding: 0.5rem;
+  align-items: center;
   transition: all 0.2s ease-in-out;
+}
+
+.navbar-btn svg {
+  margin-left: 0.5rem;
 }
 
 #navbar-open-btn {
@@ -93,6 +98,11 @@ p, span {
   -webkit-user-drag: none;
 }
 
+.portfolio-item-title {
+  color: #15181b;
+  font-weight: 900;
+}
+
 #skills-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -111,6 +121,10 @@ p, span {
 .footer {
   background: #15181b;
   color: #fff;
+}
+
+.text-footer {
+  color: #7a848a;
 }
 
 @media only screen and (max-width: 991px) {

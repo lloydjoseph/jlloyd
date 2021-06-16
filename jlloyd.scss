@@ -7,6 +7,7 @@ $blue: #0E8EDE;
 $white: #fff;
 $grey-1: #e5e5e5;
 $grey-2: #535C61;
+$blue-grey: #7a848a;
 $black: #15181b;
 $navbar-height: 6rem;
 
@@ -65,7 +66,12 @@ p, span {
   border: 1px solid $grey-2;
   background: none;
   padding: 0.5rem;
+  align-items: center;
   transition: all 0.2s ease-in-out;
+}
+
+.navbar-btn svg {
+  margin-left: 0.5rem;
 }
 
 #navbar-open-btn {
@@ -117,6 +123,11 @@ p, span {
   -webkit-user-drag: none;
 }
 
+.portfolio-item-title {
+  color: $black;
+  font-weight: 900;
+}
+
 // ----------------------------------------------------------
 // Skills section
 // ----------------------------------------------------------
@@ -143,6 +154,10 @@ p, span {
 .footer {
   background: $black;
   color: $white;
+}
+
+.text-footer {
+  color: $blue-grey;
 }
 
 // ----------------------------------------------------------
